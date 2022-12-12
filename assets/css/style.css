@@ -1,0 +1,635 @@
+/* custom font */
+@import url("../css/fonts/font.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* main style start from here */
+
+
+
+/* navbar */
+header{
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navleft{
+    margin-left: 15px;
+}
+
+#logotext1{
+    font-family: Omegle;
+    font-size: 33px;
+    font-weight: 700px;
+    color: rgb(56, 55, 55);
+    display: inline-block;
+    transition: ease-in-out .2s 
+}
+
+#logotext2{
+    font-family: Urban;
+    font-size: 25px;
+    font-weight: 700px;
+    color: rgba(7, 7, 7, 0.823);
+    transition: ease-in-out .2s ;
+    display: none !important;
+}
+#logotext:hover{
+    transform: scale(1.02);
+}
+
+
+.navmiddle a{
+    margin: 0 10px;
+    font-family: Josefin;
+    color: black;
+    display: inline-block;
+    transition: ease-in-out .2s ;
+}
+
+.navmiddle .active{
+    color: green;
+    border-bottom: 3px solid green;
+    transition: ease-in-out .5s ;
+    border-radius: 1px;
+    
+}
+
+
+.navmiddle a:hover{
+    color: green;
+    transform: scale(1.1);
+}
+.navright a{
+    padding: 2px;
+    font-size: 16px;
+    color: rgba(15, 1, 1, 0.827);
+    display: inline-block;
+    transition: ease-in-out .2s ;
+}
+.navright{
+    margin-right: 15px;
+}
+.navright a:hover{
+    color: black;
+    transform: scale(1.2);
+}
+
+#menu-icon{
+  font-size: 26px;
+  cursor: pointer;
+  transition: ease-in-out .2s ;
+  z-index: 10001;
+  display: none;
+  margin-right: 15px;
+}
+
+#menu-icon:hover{
+    transform: scale(1.2);
+}
+
+/* navbar */
+
+
+/* banner */
+.banner{
+    height: 730px;
+    background: url(./../image/backgroundImage/Background-image.png) no-repeat center top;
+    background-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-family: Abel;
+    display: inline-block;
+}
+.banner h2{
+    font-family: Anton;
+    display: inline-block;
+}
+
+.banner a{
+    font-family: Abel;
+    width: 10%;
+    height: 45px;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    line-height: 45px;
+    display: inline-block;
+    border-radius: 40px;
+    transition: ease-in-out .1s ;
+
+}
+.banner a:hover{
+    transform: scale(1.02);
+    font-weight: 800px;
+    background: linear-gradient(45deg, rgb(171, 56, 184), rgb(133, 130, 27));
+}
+
+/* x banner x */
+
+
+
+/* card style */
+
+.maincard{
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(169, 169, 169, 0.574);
+    transition: ease-in-out .2s ;
+    text-align: center;
+
+}
+.maincard:hover{
+    transform: scale(1.01);
+}
+
+.cardimg{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.cardimg img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform .5s ease-in-out;
+    border: none;
+    cursor: pointer;
+
+}
+
+.cardimg:hover > img{
+    transform: scale(1.3);
+}
+
+
+.card-button{
+    width: 35%;
+    height: 40px;
+    line-height: 37px;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    border-radius: 5px;
+    color: lightcyan;
+    transition: ease-in-out .1s ;
+    font-size: 16px;
+    display: inline-block;
+}
+.card-button:hover{
+    transform: scale(1.02);
+    background: linear-gradient(45deg, rgb(171, 56, 184), rgb(133, 130, 27));
+    color: white;
+}
+.card-title{
+    font-family: Josefin;
+}
+.card-date{
+    font-size: 9px;
+    padding-top: 10px;
+    opacity: 50%;
+}
+
+/* card style end */
+
+
+
+/* banner and catagory */
+/* banner paty start */
+
+.bannerpost{
+    width: 100%;
+   
+}
+
+.bimg{
+    width: 100%;
+    overflow: hidden;
+}
+.bimg img{
+    width: 100%;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+
+}
+
+.bimg:hover > img{
+    transform: scale(1.3);
+}
+
+
+
+.bannerdate{
+   
+    left: 33%;
+    bottom: -5%;
+    
+}
+.bannerdate p{
+    text-align: center;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    height: 45px;
+    width: 100%;
+    color: white;
+    line-height: 45px;
+    border-radius: 25px;
+    transition: ease-in-out .1s ;
+    font-family: Abel;
+    padding: 0 10px;
+}
+.bannerdate span{
+    padding-right: 10px;
+}
+.bannerdate p:hover{
+    transform: scale(1.02);
+}
+.banner-contant{
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.651);
+    
+}
+
+
+.bannerhead{
+    font-family: Anton;
+}
+.bannertext{
+    font-family: Abel;
+}
+.rdmore{
+    width: 20%;
+    height: 45px;
+    line-height: 45px;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    color: white; 
+    display: inline-block;
+    text-align: center;
+}
+
+
+.rdmore:hover{
+    transform: scale(1.02);
+    color: white;
+    background: linear-gradient(45deg, rgb(171, 56, 184), rgb(133, 130, 27));
+}
+
+/* categories section */
+
+
+.catagory{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, aqua, rgb(219, 62, 216));
+    text-align: center;
+    color: white;
+}
+
+.catagory-text{
+    line-height: 60px;
+    font-family: Urban;
+}
+
+
+
+/* categories items */
+
+
+.category-item ul li a{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background: linear-gradient(150deg, rgba(243, 6, 200, 0.897), rgb(34, 185, 235));
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+    padding-left: 15px;
+}
+
+.category-item ul li a:hover{
+    background: linear-gradient(150deg,  rgb(34, 185, 235),rgba(243, 6, 200, 0.897));
+   
+}
+
+.category-item ul li i{
+    padding-right: 5px;
+}
+
+
+
+/* sider banner post */
+
+.sidepartone{
+    width: 100%;
+}
+.sidepartimage{
+    position: relative;
+    width: 100%;
+    height: 315px;
+   
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.sidepartimage img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+
+}
+
+.sidepartimage span{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(#0000, #121212);
+    color: white;
+    z-index: 9999;
+    transform: translateY(250px);
+    transition: transform 0.06s ease-in-out;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+.sidepartimage span h2{
+    font-family: Josefin;
+}
+.sidepartimage span p{
+    font-family: Abel;
+}
+.sidepartimage span button{
+    width: 25%;
+    height: 35px;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    border: none;
+    color: white;
+    transition: ease-in-out .1s ;
+}
+.sidepartimage span button:hover{
+    transform: scale(1.02);
+    background: linear-gradient(45deg, rgb(171, 56, 184), rgb(133, 130, 27));
+    color: white;
+}
+.sidepartimage::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3 ease-in-out;
+}
+.sidepartimage:hover > span{
+    transform: translateY(0);
+}
+
+.sidepartimage:hover:after{
+    opacity: 1;
+}
+.sidepartimage:hover > img{
+    transform: scale(1.2);
+
+}
+.dateTime1{
+    margin: 10px 0 5px 0;
+}
+.dateTime1 p{
+    text-align: center;
+    font-size: 12px;
+    font-family: Abel;
+}
+
+.dateTime1 span{
+    padding: 5px;
+}
+
+
+
+/* rendom post */
+.rendomPost{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.rendomImage{
+    width: 100%;
+    overflow: hidden;
+}
+
+.rendomImage img{
+    height: 100%;
+    display: inline-block;
+    transform: scale(1);
+    transition: transform .4s ease-in-out;
+}
+
+
+.rendomImage:hover > img{
+    transform: scale(1.3);
+}
+
+
+
+.rendomContent{
+    width: 100%;
+    height: 400px;
+    padding: 0 15px 0 10px;
+    overflow: scroll;
+}
+
+.rdtitle{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.rdtext{
+    font-family: Abel;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* all example sectin*/
+.exampletotaltop{
+    border-top: 2px solid rgb(43, 42, 42);
+    padding-top: 15px;
+}
+
+.example-total{
+    border-bottom: 2px solid rgb(43, 42, 42);
+    margin-bottom: 15px;
+}
+
+.allExample{
+    width: 100%;
+}
+
+.allexampletitle{
+    display: block;
+    font-family: Anton;
+}
+
+.allImageExample{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.allImageExample img{
+    height: 100%;
+    transform: scale(1);
+    transition: transform .4s ease-in-out;
+
+}
+
+.allImageExample:hover > img{
+    transform: scale(1.3);
+}
+.blogmaintitle{
+    font-weight: bold;
+}
+.allExampleText{
+    width: 100%;
+    height: 80px;
+    overflow: scroll;
+    font-family: Abel;
+    font-size: 14px;
+    padding: 0 10px 5px 10px;
+}
+
+.allreadmore{
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    height: 45px;
+    line-height: 45px;
+    background: linear-gradient(45deg, rgb(113, 130, 205), rgb(118, 225, 65));
+    color: white;
+    transition: ease-in-out .1s ;
+}
+
+.allreadmore:hover{
+    transform: scale(1.02);
+    background: linear-gradient(45deg, rgb(171, 56, 184), rgb(133, 130, 27));
+    color: white;
+}
+
+.rcytblog{
+    font-family: Anton;
+}
+
+.yttitle{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-weight: blod;
+    color: white;
+    background: linear-gradient(90deg, rgb(50, 209, 50),rgb(235, 235, 72));
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+/* footer section */
+
+
+.footersection{
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.897);
+}
+
+
+.ftsec1{
+
+    margin-top: 5rem;
+}
+
+.input1{
+    position: absolute;
+    left: 5rem;
+    width: 56%;
+    height: 22px;
+    font-size: 10px;
+    line-height: 22px;
+    padding: 0 0 0 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.inp22 span{
+    position: absolute;
+    left: 72%;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 7px;
+    top: -6px;
+   
+}
+
+.ftimg1{
+    width: 120px;
+    height: 100px;
+}
+
+.ftimg1 img{
+    padding-bottom: 8px;
+}
+
+.icon22 i{
+    color: white;
+}
+
+.arrowup{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: white;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+
+.arrowup i{
+    line-height: 60px;
+    font-size: 35px;
+    color: black;
+}
+
+.cpr8{
+    font-size: 12px;
+    opacity: 50%;
+    color: white;
+    bottom: -83px;
+    left: 47%;
+  }
+
+  .mdiconsocial{
+    width: 100%;
+    display: none;
+  }
